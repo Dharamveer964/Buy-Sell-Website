@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SellBytic || Dharamveer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <nav class="navbar container">
+        <div class="logo">SellBytic</div>
+        <ul class="nav-links">
+          <li><a href="#hero" class="btn">Home</a></li>
+          <li><a href="#sell" class="btn">Sell Product</a></li>
+          <li><a href="#buy" class="btn">Buy Product</a></li>
+        </ul>
+        <button class="menu-btn">&#9776;</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <div class="container box">
+          <h1>Welcome to the Best Buy & Sell Platform</h1>
+          <p>Buy and sell products with ease and confidence.</p>
+          <div class="buttons">
+            <a href="#sell" class="btn">Sell a Product</a>
+            <a href="#buy" class="btn">Browse Products</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sell Section -->
+      <section id="sell" class="section">
+        <div class="container">
+          <h2 class="heading">Sell Your Product</h2>
+          <form id="sellForm">
+            <h4 class="form-heading">Enter Porduct Details</h4>
+
+            <label for="productImage">Image Url:</label>
+            <input type="text" id="productImageUrl" />
+
+            <label for="productName">Name:</label>
+            <input type="text" id="productName" required />
+
+            <label for="productDescription">Description:</label>
+            <textarea id="productDescription" required></textarea>
+
+            <label for="productPrice">Price (in $):</label>
+            <input type="number" id="productPrice" required />
+
+            <button id="form-btn" type="submit">Submit Product</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Buy Section -->
+      <section id="buy" class="section">
+        <div class="container">
+          <h2 class="heading">Buy Products</h2>
+          <ul id="productList">
+            No products available yet.
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>This webiste is developed by Dharamveer</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
