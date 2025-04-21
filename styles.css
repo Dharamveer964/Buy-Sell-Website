@@ -1,7 +1,7 @@
 /* Import Google Font for Better Typography */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-*{
+* {
     scroll-behavior: smooth;
 }
 
@@ -243,8 +243,8 @@ textarea:focus {
 
 .image img {
     width: 100%;
+    height: 160px;
     object-fit: cover;
-    aspect-ratio: 5 / 3;
 }
 
 .content {
@@ -337,4 +337,50 @@ textarea:focus {
 
 .show {
     display: flex !important;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 90%;
+}
+
+.modal-content h2{
+    color: #007bff;
+}
+
+.modal-content input,
+.modal-content textarea {
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 18px;
+}
+
+#saveEditBtn,
+#cancelEditBtn {
+    padding: 8px 15px;
+    cursor: pointer;
 }
